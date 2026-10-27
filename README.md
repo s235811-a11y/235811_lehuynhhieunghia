@@ -54,7 +54,8 @@ npm install
 npm run dev
 ```
 
-Mở địa chỉ Vite hiển thị trong terminal. Yêu cầu tới `/api` được proxy tới backend.
+Mở địa chỉ Vite hiển thị trong terminal. Mặc định yêu cầu tới `/api` được proxy tới backend.
+Có thể tạo `frontend/.env` từ `.env.example` và đặt `VITE_API_BASE_URL` thành địa chỉ API đầy đủ khi triển khai khác môi trường.
 
 ## Repository
 

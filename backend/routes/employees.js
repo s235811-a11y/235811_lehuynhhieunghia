@@ -78,6 +78,10 @@ router.put(
         employeeCode: request.body.employeeCode,
         fullName: request.body.fullName,
         email: request.body.email,
+        department: request.body.department,
+        position: request.body.position,
+        phone: request.body.phone,
+        employmentStatus: request.body.employmentStatus,
       },
       { new: true, runValidators: true },
     );

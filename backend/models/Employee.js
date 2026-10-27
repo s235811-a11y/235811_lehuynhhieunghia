@@ -20,6 +20,14 @@ const employeeSchema = new mongoose.Schema(
       lowercase: true,
       match: [/^[^\s@]+@[^\s@]+\.[^\s@]+$/, 'Email không hợp lệ.'],
     },
+    department: { type: String, trim: true, default: '' },
+    position: { type: String, trim: true, default: '' },
+    phone: { type: String, trim: true, default: '' },
+    employmentStatus: {
+      type: String,
+      enum: ['Đang làm việc', 'Tạm nghỉ', 'Đã nghỉ việc'],
+      default: 'Đang làm việc',
+    },
   },
   { timestamps: true },
 );
